@@ -4,14 +4,12 @@ new_numbers = []
 for val in numbers:
 
     try:
-        if type(val) is int:
-            new_numbers.append(val)
-        elif val is None:
-            new_numbers.append(0)
-        else:
-            new_numbers.append(int(val))
+        new_numbers.append(int(val))
+    except TypeError:
+        pass
     except ValueError:
         pass
 
+print(new_numbers)
 print('Min value', min(new_numbers))
 print('Max value', max(new_numbers))
