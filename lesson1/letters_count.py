@@ -6,7 +6,6 @@ Python interpreters are available for many operating systems. CPython, the refer
 let = 0
 
 message = message.lower()
-print('Number of occurence of python:', message.count('python'))
 
 import string
 alphabet = list(string.ascii_lowercase)
@@ -16,4 +15,5 @@ for val in alphabet:
         let = count
         x = val
 print('The most common letter is', x)
+print('Number of occurence of python:', message.count('python'))
 
