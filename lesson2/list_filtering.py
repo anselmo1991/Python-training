@@ -11,7 +11,7 @@ print('With for:', l1)
 
 # with list comprehentions
 l3 = [i for i in l if type(i) == int]
-print('With list comprehention', l3)
+print('With list comprehention:', l3)
 
 
 # with filter() + lambda
