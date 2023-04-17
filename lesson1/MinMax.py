@@ -5,9 +5,7 @@ for val in numbers:
 
     try:
         new_numbers.append(int(val))
-    except TypeError:
-        pass
-    except ValueError:
+    except (TypeError, ValueError):
         pass
 
 print(new_numbers)
