@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='Python training',
+    name='python_training',
     version='0.1',
     description='This package consists of tasks completed as part of the Python course',
     url='https://github.com/anselmo1991/Python-training',
