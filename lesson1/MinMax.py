@@ -4,7 +4,7 @@ new_numbers = []
 for val in numbers:
 
     try:
-        if isinstance(val, int) == True:
+        if isinstance(val, int):
             new_numbers.append(val)
     except (TypeError, ValueError):
         pass

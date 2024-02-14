@@ -37,13 +37,13 @@ def iterate_over_fifteen():
 print(iterate_over_fifteen())
 
 
-def math_formula():
-    upper = N - 1
-    threes = int(3 * (upper / 3) * ((upper / 3) + 1) / 2)
-    fives = int(5 * (upper / 5) * ((upper / 5) + 1) / 2)
-    fifteens = int(15 * (upper / 15) * ((upper / 15) + 1) / 2)
+def math_formula(upper):
+    upper -= 1
+    threes = (3 * (upper // 3) * (upper // 3 + 1)) // 2
+    fives = (5 * (upper // 5) * (upper // 5 + 1)) // 2
+    fifteens = (15 * (upper // 15) * (upper // 15 + 1)) // 2
     res = threes + fives - fifteens
     return res
 
 
-print(math_formula())
+print(math_formula(100000000))
