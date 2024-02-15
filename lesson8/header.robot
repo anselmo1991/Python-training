@@ -4,9 +4,8 @@ Suite Setup       Open Browser    https://www.epam.com/    Chrome
 Suite Teardown    Close All Browsers
 ...                Generate Report
 ...                Log Source    console
+Resource          constants.robot
 
-*** Variables ***
-${EXPECTED_HEADER_LINKS}    Services    How We Do It    Our Work    Insights    About    Careers
 
 *** Test Cases ***
 Localization of Header

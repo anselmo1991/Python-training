@@ -4,10 +4,8 @@ Library           SeleniumLibrary
 ...                Open Browser
 ...                Close Browser
 ...                Log Source    console   # Включить логирование в консоль
+Resource          constants.robot
 
-*** Variables ***
-${URL}            https://www.epam.com/
-${ABOUT_URL}      https://www.epam.com/about
 
 *** Test Cases ***
 Test About Link
